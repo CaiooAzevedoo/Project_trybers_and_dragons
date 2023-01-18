@@ -14,9 +14,9 @@ abstract class Race {
     return this._name;
   }
 
-  public set name(value: string) {
-    this._name = value;
-  }
+  // public set name(value: string) {
+  //   this._name = value;
+  // }
 
   public get dexterity(): number {
     return this._dexterity;
