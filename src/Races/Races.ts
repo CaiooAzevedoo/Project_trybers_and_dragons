@@ -1,4 +1,4 @@
-export default class Race {
+abstract class Race {
   private _name: string;
   private _dexterity: number;
 
@@ -25,4 +25,12 @@ export default class Race {
   public set dexterity(value: number) {
     this._dexterity = value;
   }
+
+  static createdRacesInstances(): number {
+    throw new Error('Not implemented');
+  }
+
+  abstract get maxLifePoints(): number;
 }
+
+export default Race;
