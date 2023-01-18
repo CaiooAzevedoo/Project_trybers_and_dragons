@@ -7,7 +7,9 @@ class Elf extends Race {
     dexterity: number,
     public HP = 99,
   ) {
-    super(name, dexterity); 
+    super(name, dexterity);
+
+    Elf.count += 1;
   }
 
   get maxLifePoints(): number {

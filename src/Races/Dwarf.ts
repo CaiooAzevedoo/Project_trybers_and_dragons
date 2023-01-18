@@ -7,7 +7,9 @@ class Dwarf extends Race {
     dexterity: number,
     public HP = 80,
   ) {
-    super(name, dexterity); 
+    super(name, dexterity);
+
+    Dwarf.count += 1;
   }
 
   get maxLifePoints(): number {

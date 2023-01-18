@@ -7,7 +7,9 @@ class Halfling extends Race {
     dexterity: number,
     public HP = 60,
   ) {
-    super(name, dexterity); 
+    super(name, dexterity);
+
+    Halfling.count += 1;
   }
 
   get maxLifePoints(): number {

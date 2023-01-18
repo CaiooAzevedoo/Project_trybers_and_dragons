@@ -8,6 +8,8 @@ class Orc extends Race {
     public HP = 74,
   ) {
     super(name, dexterity); 
+
+    Orc.count += 1;
   }
 
   get maxLifePoints(): number {
