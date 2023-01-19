@@ -11,3 +11,5 @@ interface Fighter {
   levelUp():void,
   receiveDamage(attackPoints: number): number
 }
+
+export default Fighter;
