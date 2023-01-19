@@ -87,7 +87,7 @@ class Character implements Fighter {
   // }
 
   public get energy(): Energy {
-    return this._energy;
+    return { ...this._energy };
   }
 
   // public set energy(value: Energy) {
@@ -109,10 +109,10 @@ class Character implements Fighter {
   }
 
   levelUp(): void {
-    this._maxLifePoints = getRandomInt(1, 10);
-    this._strength = getRandomInt(1, 10);
-    this._dexterity = getRandomInt(1, 10);
-    this._defense = getRandomInt(1, 10);
+    this._maxLifePoints += getRandomInt(1, 10);
+    this._strength += getRandomInt(1, 10);
+    this._dexterity += getRandomInt(1, 10);
+    this._defense += getRandomInt(1, 10);
     this._energy.amount = 10;
     this._lifePoints = this._maxLifePoints;
     if (this.maxLifePoints > this.race.maxLifePoints) {
